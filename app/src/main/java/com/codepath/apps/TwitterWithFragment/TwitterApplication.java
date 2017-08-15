@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD;
+package com.codepath.apps.TwitterWithFragment;
 
 import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowLog;

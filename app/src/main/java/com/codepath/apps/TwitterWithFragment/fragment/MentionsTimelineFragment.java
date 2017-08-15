@@ -1,11 +1,11 @@
-package com.codepath.apps.MyFisrtTwitterJD.fragment;
+package com.codepath.apps.TwitterWithFragment.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
 
-import com.codepath.apps.MyFisrtTwitterJD.TwitterApplication;
-import com.codepath.apps.MyFisrtTwitterJD.TwitterClient;
-import com.codepath.apps.MyFisrtTwitterJD.models.Tweet;
+import com.codepath.apps.TwitterWithFragment.TwitterApplication;
+import com.codepath.apps.TwitterWithFragment.TwitterClient;
+import com.codepath.apps.TwitterWithFragment.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;

@@ -1,6 +1,6 @@
-package com.codepath.apps.MyFisrtTwitterJD.models;
+package com.codepath.apps.TwitterWithFragment.models;
 
-import com.codepath.apps.MyFisrtTwitterJD.MyDatabase;
+import com.codepath.apps.TwitterWithFragment.MyDatabase;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;

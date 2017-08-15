@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD;
+package com.codepath.apps.TwitterWithFragment;
 
 import android.widget.AbsListView;
 

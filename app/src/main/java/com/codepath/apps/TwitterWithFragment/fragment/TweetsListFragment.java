@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD.fragment;
+package com.codepath.apps.TwitterWithFragment.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.codepath.apps.MyFisrtTwitterJD.R;
-import com.codepath.apps.MyFisrtTwitterJD.TweetsArrayAdapter;
-import com.codepath.apps.MyFisrtTwitterJD.models.Tweet;
+import com.codepath.apps.TwitterWithFragment.R;
+import com.codepath.apps.TwitterWithFragment.TweetsArrayAdapter;
+import com.codepath.apps.TwitterWithFragment.models.Tweet;
 
 import java.util.ArrayList;
 import java.util.List;

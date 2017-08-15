@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD;
+package com.codepath.apps.TwitterWithFragment;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
@@ -8,8 +8,8 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.codepath.apps.MyFisrtTwitterJD.fragment.UserTimelineFragment;
-import com.codepath.apps.MyFisrtTwitterJD.models.User;
+import com.codepath.apps.TwitterWithFragment.fragment.UserTimelineFragment;
+import com.codepath.apps.TwitterWithFragment.models.User;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 

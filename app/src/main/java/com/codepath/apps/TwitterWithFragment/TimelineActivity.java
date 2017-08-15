@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD;
+package com.codepath.apps.TwitterWithFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.astuetz.PagerSlidingTabStrip;
-import com.codepath.apps.MyFisrtTwitterJD.fragment.HomeTimelineFragment;
-import com.codepath.apps.MyFisrtTwitterJD.fragment.MentionsTimelineFragment;
+import com.codepath.apps.TwitterWithFragment.fragment.HomeTimelineFragment;
+import com.codepath.apps.TwitterWithFragment.fragment.MentionsTimelineFragment;
 
 
 public class TimelineActivity extends ActionBarActivity {

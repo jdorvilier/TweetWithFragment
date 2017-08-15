@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD.models;
+package com.codepath.apps.TwitterWithFragment.models;
 
 import org.json.JSONException;
 import org.json.JSONObject;

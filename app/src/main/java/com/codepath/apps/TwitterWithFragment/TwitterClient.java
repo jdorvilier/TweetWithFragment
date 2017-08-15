@@ -1,9 +1,9 @@
-package com.codepath.apps.MyFisrtTwitterJD;
+package com.codepath.apps.TwitterWithFragment;
 
 import android.content.Context;
 
-import com.codepath.apps.MyFisrtTwitterJD.models.Tweet;
-import com.codepath.apps.MyFisrtTwitterJD.models.User;
+import com.codepath.apps.TwitterWithFragment.models.Tweet;
+import com.codepath.apps.TwitterWithFragment.models.User;
 import com.codepath.oauth.OAuthBaseClient;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

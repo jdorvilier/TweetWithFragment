@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD;
+package com.codepath.apps.TwitterWithFragment;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.codepath.apps.MyFisrtTwitterJD.models.Tweet;
+import com.codepath.apps.TwitterWithFragment.models.Tweet;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

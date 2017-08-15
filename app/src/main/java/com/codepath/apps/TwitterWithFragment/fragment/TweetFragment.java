@@ -1,4 +1,4 @@
-package com.codepath.apps.MyFisrtTwitterJD.fragment;
+package com.codepath.apps.TwitterWithFragment.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,10 +16,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.codepath.apps.MyFisrtTwitterJD.R;
-import com.codepath.apps.MyFisrtTwitterJD.TwitterApplication;
-import com.codepath.apps.MyFisrtTwitterJD.TwitterClient;
-import com.codepath.apps.MyFisrtTwitterJD.models.User;
+import com.codepath.apps.TwitterWithFragment.R;
+import com.codepath.apps.TwitterWithFragment.TwitterApplication;
+import com.codepath.apps.TwitterWithFragment.TwitterClient;
+import com.codepath.apps.TwitterWithFragment.models.User;
 import com.squareup.picasso.Picasso;
 
 public class TweetFragment extends DialogFragment {
