@@ -1,0 +1,73 @@
+package com.codepath.apps.MyFisrtTwitterJD.fragment;
+
+import android.os.Bundle;
+import android.util.Log;
+
+import com.codepath.apps.MyFisrtTwitterJD.TwitterApplication;
+import com.codepath.apps.MyFisrtTwitterJD.TwitterClient;
+import com.codepath.apps.MyFisrtTwitterJD.models.Tweet;
+import com.loopj.android.http.JsonHttpResponseHandler;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import cz.msebera.android.httpclient.Header;
+
+/**
+ * Created by Jonathan Dorvilier on 8/13/2017.
+ */
+
+public class UserTimelineFragment extends  TweetsListFragment{
+
+    private TwitterClient client;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        client = TwitterApplication.getRestClient();
+        populateTimeline();
+    }
+
+    // Creates a new fragment given an int and title
+    // DemoFragment.newInstance(5, "Hello");
+    public static UserTimelineFragment newInstance(String screen_name) {
+        UserTimelineFragment userFragment = new UserTimelineFragment();
+        Bundle args = new Bundle();
+        args.putString("screen_name", screen_name);
+        userFragment.setArguments(args);
+        return userFragment;
+    }
+
+
+    private void populateTimeline() {
+
+        String screenName = getArguments().getString("screen_name");
+
+        client.getUserTimeline(screenName, new JsonHttpResponseHandler(){
+            // success
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
+                //super.onSuccess(statusCode, headers, json);
+                Log.d("DEBUG",json.toString());
+
+                //ArrayList<Tweet> tweets =Tweet.fromArray(json);
+                addAll(Tweet.fromJSONArray(json));
+            }
+
+
+            // Faillure
+
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                //super.onFailure(statusCode, headers, throwable, errorResponse);
+
+                Log.d("DEBUG",errorResponse.toString());
+            }
+        });
+
+
+
+
+    }
+}

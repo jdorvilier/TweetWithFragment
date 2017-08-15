@@ -5,12 +5,11 @@
     <string name="login_label">Connect to Twitter</string>
     <string name="intent_scheme">oauth</string>
     <string name="title_activity_timeline">My Tweets TimeLine</string>
-    <string name="intent_host">cprest</string>
-    <string name="favorites_count">favorites_count</string>
     <string name="user_screen_name">user_screen_name</string>
     <string name="compose_tweet_hint">compose_tweet_hint</string>
     <string name="update_status">update_status</string>
     <string name="user_name">user_name</string>
     <string name="characters_left">characters_left</string>
+    <string name="title_activity_profile">Profile</string>
 
 </resources>

@@ -1,5 +1,11 @@
 package com.codepath.apps.MyFisrtTwitterJD.models;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
 /**
  * Created by Jonathan Dorvilier on 8/3/2017.
  */
@@ -65,7 +71,7 @@ public class Tweet {
     }
 
 
-/*
+
     public static Tweet fromJSON(JSONObject jsonObject){
         Tweet tweet = new Tweet();
 
@@ -83,12 +89,12 @@ public class Tweet {
         return tweet;
     }
 
-    public  static ArrayList<Tweet> fromJSONArray(JSONArray jsonArray){
+    public  static ArrayList<Tweet> fromJSONArray(JSONArray json){
 
         ArrayList<Tweet> tweets = new ArrayList<>();
-         for(int i = 0; i < jsonArray.length(); i++){
+         for(int i = 0; i < json.length(); i++){
              try {
-                    JSONObject tweetJson = jsonArray.getJSONObject(i);
+                    JSONObject tweetJson = json.getJSONObject(i);
                  Tweet tweet = Tweet.fromJSON(tweetJson);
                  if (tweet!=null){
                      tweets.addAll(tweets);
@@ -103,5 +109,5 @@ public class Tweet {
          }
         return tweets;
     }
-    */
+
 }
